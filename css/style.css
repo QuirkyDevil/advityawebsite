@@ -56,6 +56,13 @@ p {
     text-align: center;
 }
 
+.ud {
+    color: white; 
+    font-family: CeraRound;
+    text-align: center;
+    font-size: 500%;
+}
+
 }
 
 @media (max-width: 960px) {
