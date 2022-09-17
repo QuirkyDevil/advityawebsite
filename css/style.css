@@ -1,0 +1,29 @@
+@font-face {
+    font-family: CeraRound;
+    src: url("../fonts/ceraroundpro-regular.otf") format("opentype");
+}
+
+body {
+    background: #0B1329;
+    font-family: CeraRound;
+}
+
+.navbar {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    font-size: 150%;
+}
+
+.navbar-brand {
+    font-size: 150%;
+    color:white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    outline-color: white;
+}
