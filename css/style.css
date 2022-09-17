@@ -3,6 +3,11 @@
     src: url("../fonts/ceraroundpro-regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: CeraRound-bold;
+    src: url("../fonts/ceraroundpro-bold.otf") format("opentype");
+}
+
 body {
     background: #0B1329;
     font-family: CeraRound;
@@ -12,11 +17,13 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     color: white;
-    font-size: 150%;
+    font-size: 175%;
+    font-family: CeraRound-bold;
 }
 
 .navbar-brand {
-    font-size: 150%;
+    font-family: CeraRound-bold;
+    font-size: 200%;
     color:white;
 }
 
@@ -24,6 +31,7 @@ body {
     color: white;
 }
 
-.navbar-toggler-icon {
-    outline-color: white;
+.navbar-item {
+    padding-left: 1%;
+    padding-right: 1%;
 }
