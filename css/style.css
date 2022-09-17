@@ -8,6 +8,8 @@
     src: url("../fonts/ceraroundpro-bold.otf") format("opentype");
 }
 
+@media (min-width: 960px) {
+
 body {
     background: #0B1329;
     font-family: CeraRound;
@@ -34,4 +36,72 @@ body {
 .navbar-item {
     padding-left: 1%;
     padding-right: 1%;
+}
+
+h1 {
+    color: white; 
+    font-family: CeraRound-bold;
+    font-size: 500%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    text-align: right;
+}
+
+p {
+    color: white; 
+    font-family: CeraRound;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+}
+
+@media (max-width: 960px) {
+    body {
+        background: #0B1329;
+        font-family: CeraRound;
+    }
+    
+    .navbar {
+        padding-left: 10%;
+        padding-right: 5%;
+        color: white;
+        font-size: 175%;
+        font-family: CeraRound-bold;
+    }
+    
+    .navbar-brand {
+        font-family: CeraRound-bold;
+        font-size: 200%;
+        color:white;
+    }
+    
+    .nav-link {
+        color: white;
+    }
+    
+    .navbar-item {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    h1 {
+        color: white; 
+        font-family: CeraRound-bold;
+        font-size: 300%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 10%;
+        text-align: center;
+    }
+    
+    p {
+        color: white; 
+        font-family: CeraRound;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
 }
