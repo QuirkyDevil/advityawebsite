@@ -1,6 +1,11 @@
 @font-face {
-    font-family: CeraRound;
-    src: url("../fonts/ceraroundpro-regular.otf") format("opentype");
+  font-family: CeraRound;
+  src: url("../fonts/ceraroundpro-regular.otf") format("opentype");
+}
+
+html {
+  height: 100%;
+  width: 100%;
 }
 
 @font-face {
@@ -11,28 +16,57 @@
 @media (min-width: 960px) {
 
 body {
-    background: #0B1329;
-    font-family: CeraRound;
+  background: #0b1329;
+  font-family: CeraRound;
+  height: 100%;
+  width: 100%;
 }
 
 .navbar {
-    padding-left: 5%;
-    padding-right: 5%;
-    color: white;
-    font-size: 175%;
-    font-family: CeraRound-bold;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+  font-size: 150%;
 }
 
 .navbar-brand {
-    font-family: CeraRound-bold;
-    font-size: 200%;
-    color:white;
+  font-size: 150%;
+  color: white;
 }
 
 .nav-link {
-    color: white;
+  color: white;
+}
+  
+.navbar-toggler-icon {
+  outline-color: white;
 }
 
+.scene {
+  height: auto;
+  width: 100vw;
+}
+
+.scene i {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: animate linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
 .navbar-item {
     padding-left: 1%;
     padding-right: 1%;

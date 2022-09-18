@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <!-- BootStrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
@@ -16,40 +18,83 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
 
-    <title>Home</title> 
-</head>
-<body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
 
+    <script type="text/javascript" src="./js/script.js"></script>
+
+    <title>Advitya</title>
+  </head>
+  <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg container-fluid navbar-dark" >
+    <nav class="navbar navbar-expand-lg container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <a class="navbar-brand" href="">Advitya</a>
+      <a class="navbar-brand" href="">Advitya</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ms-auto">
-            <li class="navbar-item">
-                <a class="nav-link" href="html/events.html">Events</a>
-            </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
 
-            <li class="navbar-item">
-                <a class="nav-link" href="html/members.html">Members</a>
-            </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#">Members</a>
+          </li>
 
-            <li class="navbar-item">
-                <a class="nav-link" href="html/gallery.html">Gallery</a>
-            </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
 
-            <li class="navbar-item">
-                <a class="nav-link" href="html/registration.html">Registration</a>
-            </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#">Registration</a>
+          </li>
         </ul>
-        </div>
+      </div>
     </nav>
 
+    <div class="scene"><model</div>
+    <script type="text/javascript">
+      function stars() {
+        let count = 500;
+        let scene = document.querySelector(".scene");
+        let i = 0;
+
+        while (i < count) {
+          let star = document.createElement("i");
+          let x = Math.floor(Math.random() * window.innerWidth);
+          let y = Math.floor(Math.random() * window.innerHeight);
+          let duration = Math.random() * 10;
+          let size = Math.random() * 2;
+
+          star.style.left = x + "px";
+          star.style.top = y + "px";
+          star.style.width = 1 + size + "px";
+          star.style.height = 1 + size + "px";
+
+          star.style.animationDuration = 5 + duration + "s";
+          star.style.animationDelay = duration + "s";
+
+          scene.appendChild(star);
+          i++;
+        }
+      }
+
+      stars();
+    </script>
     <!-- Who are we-->
 
     <div>
@@ -61,3 +106,4 @@
 
 </body>
 </html>
+
