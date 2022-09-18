@@ -17,7 +17,6 @@ html {
 
 body {
   background: #0b1329;
-  font-family: CeraRound;
   height: 100%;
   width: 100%;
 }
@@ -26,12 +25,14 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   color: white;
-  font-size: 150%;
+  font-size: 175%;
+  font-family: CeraRound-bold;
 }
 
 .navbar-brand {
-  font-size: 150%;
-  color: white;
+  font-family: CeraRound-bold;
+  font-size: 200%;
+  color:white;
 }
 
 .nav-link {
@@ -67,9 +68,6 @@ body {
     opacity: 0;
     transform: translate(-100px);
   }
-.navbar-item {
-    padding-left: 1%;
-    padding-right: 1%;
 }
 
 h1 {
@@ -145,4 +143,7 @@ p {
         padding-right: 10%;
         text-align: center;
     }
+
+  
+  
 }
