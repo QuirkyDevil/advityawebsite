@@ -13,6 +13,12 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
 
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <!-- for handle Bar -->
+    <script src="https://twitter.github.io/typeahead.js/js/handlebars.js"></script>
+
 
     <!-- Local Stylesheet -->
     <link rel="stylesheet" href="../css/member.css">
@@ -20,6 +26,11 @@
     <title>Members</title>
 </head>
 <body>
+
+    <!-- Required Scripts -->
+    <script src="../js/handlebars-v4.7.7.js"></script>
+    <script src="../js/jquery-v3.6.1.js"></script>
+    <script src="../js/member.js"></script>
 
     <nav class="navbar navbar-expand-lg container-fluid navbar-dark" >
 
@@ -83,80 +94,28 @@
     </script>
 
 
+
     <!-- Member's -->
     
     <section class="member">
         <div class="container">
             <h1>OUR MEMBERS</h1>
             <div class="row">
-                <div class="col-md-3 profile text-center">
-                    <div class="img-box">
-                        <img src="../assets/member1.jpg" class="img-responsive" height="150px" width="150px">
-                        <ul>
-                            <a href=""><li><i class="fab fa-instagram"></i></li></a>
-                            <a href=""><li><i class="fab fa-twitter"></i></li></a>
-                            <a href=""><li><i class="fab fa-linkedin"></i></li></a>
-                        </ul>
-                    </div>
-                    <h2>Aditya Bhandari</h2>
-                    <h3>President</h3>
-                </div>
-
-                <div class="col-md-3 profile text-center">
-                    <div class="img-box">
-                        <img src="../assets/member1.jpg" class="img-responsive" height="150px" width="150px">
-                        <ul>
-                            <a href=""><li><i class="fab fa-instagram"></i></li></a>
-                            <a href=""><li><i class="fab fa-twitter"></i></li></a>
-                            <a href=""><li><i class="fab fa-linkedin"></i></li></a>
-                        </ul>
-                    </div>
-                    <h2>Yash Patil</h2>
-                    <h3>Assistant Non Tech Coordinator</h3>
-                </div>
-
-                <div class="col-md-3 profile text-center">
-                    <div class="img-box">
-                        <img src="../assets/member1.jpg" class="img-responsive" height="150px" width="150px">
-                        <ul>
-                            <a href=""><li><i class="fab fa-instagram"></i></li></a>
-                            <a href=""><li><i class="fab fa-twitter"></i></li></a>
-                            <a href=""><li><i class="fab fa-linkedin"></i></li></a>
-                        </ul>
-                    </div>
-                    <h2>Member</h2>
-                    <h3>Post</h3>
-                </div>
-
-                <div class="col-md-3 profile text-center">
-                    <div class="img-box">
-                        <img src="../assets/member1.jpg" class="img-responsive" height="150px" width="150px">
-                        <ul>
-                            <a href=""><li><i class="fab fa-instagram"></i></li></a>
-                            <a href=""><li><i class="fab fa-twitter"></i></li></a>
-                            <a href=""><li><i class="fab fa-linkedin"></i></li></a>
-                        </ul>
-                    </div>
-                    <h2>Member</h2>
-                    <h3>Post</h3>
-                </div>
-
-                <div class="col-md-3 profile text-center">
-                    <div class="img-box">
-                        <img src="../assets/member1.jpg" class="img-responsive" height="150px" width="150px">
-                        <ul>
-                            <a href=""><li><i class="fab fa-instagram"></i></li></a>
-                            <a href=""><li><i class="fab fa-twitter"></i></li></a>
-                            <a href=""><li><i class="fab fa-linkedin"></i></li></a>
-                        </ul>
-                    </div>
-                    <h2>Member</h2>
-                    <h3>Post</h3>
-                </div>
-
             </div>
         </div>
     </section>
+
+    <script id="member-template" type="text/x-handlebars-template">
+        {{#each member}}
+        <div class="col-md-3 profile text-center">
+            <div class="img-box">
+                <img src="../assets/{{image}}" class="img-responsive" height="150px" width="150px">
+            </div>
+            <h2>{{name}}</h2> 
+            <h3>{{post}}</h3>
+        </div>
+        {{/each}}
+    </script>
 
 </body>
 </html>

@@ -104,6 +104,10 @@
         opacity: 0;
     }
 
+    .img-responsive { 
+      border-radius: 10px;
+    }
+
     .scene {
         height: auto;
         width: 100vw;
@@ -207,6 +211,10 @@ h3 {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
+}
+
+.img-responsive { 
+  border-radius: 10px;
 }
 
 .scene {

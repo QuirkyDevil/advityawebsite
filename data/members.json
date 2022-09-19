@@ -1,0 +1,14 @@
+{
+    "member": [
+        {
+            "name": "Aditya Bhandari",
+            "post": "President",
+            "image": "member1.jpg"
+        },
+        {
+            "name": "Aryan Banafal",
+            "post": "Vice President",
+            "image": "member1.jpg"
+        }
+    ]
+}
