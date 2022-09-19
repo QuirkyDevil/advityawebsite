@@ -44,10 +44,13 @@
 
     <script type="text/javascript" src="./js/script.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.css" integrity="sha512-TzpAFfzjJAI0CY7w33tQEEIflTR3zB4kaQcCXcr+V4HmoQmXSMsQpX6z+c3lNC3XV0BeXQ6ZNb5X+sKeLP3cKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Advitya</title>
   </head>
   <body>
     <!-- Navigation Bar -->
+    <div class="scene"></div>
     <nav class="navbar navbar-expand-lg container-fluid">
       <button
         class="navbar-toggler"
@@ -83,8 +86,6 @@
         </ul>
       </div>
     </nav>
-
-    <div class="scene"><model</div>
     <script type="text/javascript">
       function stars() {
         let count;
@@ -121,11 +122,24 @@
       stars();
     </script>
     <!-- Who are we-->
-
-    <div>
-      <h1>Who Are We</h1>
-    </div>
-
+    <div id="fullpage">
+      <div class="section"> 
+        <h1>Who are we?</h1>
+      </div>
+      <div class="section"> 
+        <h1>What are we?</h1>
+      </div>
+      <div class="section"> 
+        <h1>Why are we?</h1>
+      </div>
+  </div>
     <!-- Footer -->
+    <script>
+      var myFullpage = new fullpage("#fullpage", {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+      });
+    </script>
   </body>
 </html>
