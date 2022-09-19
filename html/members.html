@@ -9,8 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
+    <!-- Font awesome -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+
     <!-- Local Stylesheet -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/member.css">
 
     <title>Members</title>
 </head>
@@ -45,6 +50,113 @@
         </div>
     </nav>
 
-    <h1 class="ud">Page under development </h1>
+    <!-- Background -->
+
+    <div class="scene"><model</div>
+    <script type="text/javascript">
+      function stars() {
+        let count = 500;
+        let scene = document.querySelector(".scene");
+        let i = 0;
+
+        while (i < count) {
+          let star = document.createElement("i");
+          let x = Math.floor(Math.random() * window.innerWidth);
+          let y = Math.floor(Math.random() * window.innerHeight);
+          let duration = Math.random() * 10;
+          let size = Math.random() * 2;
+
+          star.style.left = x + "px";
+          star.style.top = y + "px";
+          star.style.width = 1 + size + "px";
+          star.style.height = 1 + size + "px";
+
+          star.style.animationDuration = 5 + duration + "s";
+          star.style.animationDelay = duration + "s";
+
+          scene.appendChild(star);
+          i++;
+        }
+      }
+
+      stars();
+    </script>
+
+
+    <!-- Member's -->
+    
+    <section class="member">
+        <div class="container">
+            <h1>OUR MEMBERS</h1>
+            <div class="row">
+                <div class="col-md-3 profile text-center">
+                    <div class="img-box">
+                        <img src="../assets/member1.jpg" class="img-responsive" height="150px" width="150px">
+                        <ul>
+                            <a href=""><li><i class="fab fa-instagram"></i></li></a>
+                            <a href=""><li><i class="fab fa-twitter"></i></li></a>
+                            <a href=""><li><i class="fab fa-linkedin"></i></li></a>
+                        </ul>
+                    </div>
+                    <h2>Aditya Bhandari</h2>
+                    <h3>President</h3>
+                </div>
+
+                <div class="col-md-3 profile text-center">
+                    <div class="img-box">
+                        <img src="../assets/member1.jpg" class="img-responsive" height="150px" width="150px">
+                        <ul>
+                            <a href=""><li><i class="fab fa-instagram"></i></li></a>
+                            <a href=""><li><i class="fab fa-twitter"></i></li></a>
+                            <a href=""><li><i class="fab fa-linkedin"></i></li></a>
+                        </ul>
+                    </div>
+                    <h2>Yash Patil</h2>
+                    <h3>Assistant Non Tech Coordinator</h3>
+                </div>
+
+                <div class="col-md-3 profile text-center">
+                    <div class="img-box">
+                        <img src="../assets/member1.jpg" class="img-responsive" height="150px" width="150px">
+                        <ul>
+                            <a href=""><li><i class="fab fa-instagram"></i></li></a>
+                            <a href=""><li><i class="fab fa-twitter"></i></li></a>
+                            <a href=""><li><i class="fab fa-linkedin"></i></li></a>
+                        </ul>
+                    </div>
+                    <h2>Member</h2>
+                    <h3>Post</h3>
+                </div>
+
+                <div class="col-md-3 profile text-center">
+                    <div class="img-box">
+                        <img src="../assets/member1.jpg" class="img-responsive" height="150px" width="150px">
+                        <ul>
+                            <a href=""><li><i class="fab fa-instagram"></i></li></a>
+                            <a href=""><li><i class="fab fa-twitter"></i></li></a>
+                            <a href=""><li><i class="fab fa-linkedin"></i></li></a>
+                        </ul>
+                    </div>
+                    <h2>Member</h2>
+                    <h3>Post</h3>
+                </div>
+
+                <div class="col-md-3 profile text-center">
+                    <div class="img-box">
+                        <img src="../assets/member1.jpg" class="img-responsive" height="150px" width="150px">
+                        <ul>
+                            <a href=""><li><i class="fab fa-instagram"></i></li></a>
+                            <a href=""><li><i class="fab fa-twitter"></i></li></a>
+                            <a href=""><li><i class="fab fa-linkedin"></i></li></a>
+                        </ul>
+                    </div>
+                    <h2>Member</h2>
+                    <h3>Post</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
