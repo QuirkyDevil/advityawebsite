@@ -1,1 +1,3 @@
 .DS_Store
+*/vendor
+api_key.txt
