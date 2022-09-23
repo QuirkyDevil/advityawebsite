@@ -45,8 +45,19 @@
     <script type="text/javascript" src="./js/script.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.css" integrity="sha512-TzpAFfzjJAI0CY7w33tQEEIflTR3zB4kaQcCXcr+V4HmoQmXSMsQpX6z+c3lNC3XV0BeXQ6ZNb5X+sKeLP3cKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.css"
+      integrity="sha512-TzpAFfzjJAI0CY7w33tQEEIflTR3zB4kaQcCXcr+V4HmoQmXSMsQpX6z+c3lNC3XV0BeXQ6ZNb5X+sKeLP3cKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Advitya</title>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -123,16 +134,32 @@
     </script>
     <!-- Who are we-->
     <div id="fullpage">
-      <div class="section"> 
-        <h1>Who are we?</h1>
+      <div class="section" id="who_are_we">
+        <model-viewer
+          src="./3d models/Astronaut.glb"
+          camera-controls
+          disable-zoom
+        ></model-viewer>
+        <div class="text">
+          <h1>Who are we?</h1>
+          <h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            est reiciendis molestiae inventore fuga, quis iste autem obcaecati,
+            consequatur nam doloribus, nulla aliquid provident dignissimos!
+            Laudantium, obcaecati corporis. Modi, assumenda! Lorem ipsum dolor,
+            sit amet consectetur adipisicing elit.
+          </h4>
+        </div>
       </div>
-      <div class="section"> 
+      <div class="section">
         <h1>What are we?</h1>
       </div>
-      <div class="section"> 
+      <div class="section">
         <h1>Why are we?</h1>
       </div>
-  </div>
+    </div>
+    =
+
     <!-- Footer -->
     <script>
       var myFullpage = new fullpage("#fullpage", {

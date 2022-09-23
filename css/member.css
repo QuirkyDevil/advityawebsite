@@ -1,0 +1,242 @@
+@font-face {
+    font-family: CeraRound;
+    src: url("../fonts/ceraroundpro-regular.otf") format("opentype");
+  }
+  
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  @font-face {
+      font-family: CeraRound-bold;
+      src: url("../fonts/ceraroundpro-bold.otf") format("opentype");
+  }
+  
+  @media (min-width: 960px) {
+
+    body {
+      background: #0b1329;
+      height: 100%;
+      width: 100%;
+    }
+    
+    .navbar {
+      padding-left: 3%;
+      padding-right: 3%;
+      color: white;
+      font-size: 175%;
+      font-family: CeraRound-bold;
+    }
+    
+    .navbar-brand {
+      font-family: CeraRound-bold;
+      font-size: 200%;
+      color:white;
+    }
+    
+    .nav-link {
+      color: white;
+    }
+      
+    .navbar-toggler-icon {
+      outline-color: white;
+    }
+
+    /* Member's */
+
+    .member {
+        margin: 75px 0;
+    }
+    
+    h1 {
+        color: white; 
+        font-family: CeraRound-bold;
+        font-size: 500%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+
+    h1:after {
+        content: '';
+        display: block;
+        margin: 10px auto;
+    }
+
+    h2 {
+        color: white; 
+        font-family: CeraRound-bold;
+        padding-top: 3%;
+    }
+
+    h3 {
+        color: white; 
+        font-family: CeraRound;
+    }
+
+    .profile {
+        padding-top: 3%;
+    }
+
+    .profile img-box {
+        opacity: 1;
+        display: block;
+        position: relative;
+    }
+
+    .img-box:after {
+        content: '';
+        opacity: 1;
+        z-index: 1;
+        background-color: rgba (0, 0, 0, 0.6);
+        position: absolute;
+    }
+
+    .img-box ul {
+        padding: 20px 0;
+        position: absolute;
+        z-index: 1;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    .scene {
+        height: auto;
+        width: 100vw;
+        z-index: -1;
+      }
+      
+      .scene i {
+        z-index: -1;
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        animation: animate linear infinite;
+      }
+
+    }
+
+    
+@media (max-width: 960px) {
+    body {
+    background: #0B1329;
+        font-family: CeraRound;
+    }
+    
+    .navbar {
+        padding-left: 10%;
+        padding-right: 5%;
+        color: white;
+        font-size: 175%;
+        font-family: CeraRound-bold;
+    }
+    
+    .navbar-brand {
+        font-family: CeraRound-bold;
+        font-size: 200%;
+        color:white;
+    }
+    
+    .nav-link {
+        color: white;
+    }
+    
+    .navbar-item {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+  /* Member's */
+
+  .member {
+    margin: 75px 0;
+}
+
+h1 {
+    color: white; 
+    font-family: CeraRound-bold;
+    font-size: 400%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+h1:after {
+    content: '';
+    display: block;
+    margin: 10px auto;
+}
+
+h2 {
+    color: white; 
+    font-family: CeraRound-bold;
+    padding-top: 3%;
+}
+
+h3 {
+    color: white; 
+    font-family: CeraRound;
+}
+
+.profile {
+    padding-top: 3%;
+}
+
+.profile img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.img-box:after {
+    content: '';
+    opacity: 1;
+    background-color: rgba (0, 0, 0, 0.6);
+    position: absolute;
+}
+
+.img-box ul {
+    padding: 20px 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.scene {
+    height: auto;
+    width: 100vw;
+    z-index: -1;
+  }
+  
+  .scene i {
+    z-index: -1;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: animate linear infinite;
+  }
+
+
+}
+
+@keyframes animate {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    10%,
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-100px);
+    }
+  }

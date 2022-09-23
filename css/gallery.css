@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+  columns: 5;
+  column-gap: 15px;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
 @font-face {
   font-family: CeraRound;
   src: url("../fonts/ceraroundpro-regular.otf") format("opentype");
@@ -13,49 +32,6 @@ html {
   src: url("../fonts/ceraroundpro-bold.otf") format("opentype");
 }
 
-model-viewer {
-  width: 50%;
-  height: 90%;
-  position: absolute;
-  top: 0%;
-}
-
-/* .section {
-  height: 100%;
-  width: 100%;
-
-  border: 1px solid black;
-  display: flex;
-  flex-direction: row;
-}
-
-.text {
-  background-color: #0b1329;
-  width: 50%;
- 
-} */
-
-.text {
-  width: 50%;
-  height: 100%;
-  text-align: center;
-
-  position: relative;
-  top: 0%;
-  left: 45%;
-}
-
-.text h4 {
-  color: rgb(217, 214, 214);
-}
-
-#who_are_we {
-  width: 100%;
-
-  display: flex;
-  justify-content: space-around;
-}
-
 @media (min-width: 960px) {
   body {
     background: #0b1329;
@@ -69,7 +45,6 @@ model-viewer {
     padding-right: 5%;
     color: white;
     font-size: 150%;
-    font-family: CeraRound-bold;
   }
 
   .navbar-brand {
@@ -108,7 +83,7 @@ model-viewer {
     font-size: 500%;
     padding-left: 10%;
     padding-right: 10%;
-    /* padding-top: 10%; */
+    padding-top: 10%;
     text-align: right;
   }
 
@@ -124,7 +99,6 @@ model-viewer {
     color: white;
     font-family: CeraRound;
     text-align: center;
-    font-size: 500%;
   }
 }
 
